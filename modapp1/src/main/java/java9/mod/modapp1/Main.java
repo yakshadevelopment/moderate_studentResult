@@ -12,7 +12,7 @@ public class Main {
 	
 	private static List<StudentResult> convertToList(String roll) throws Exception
 	{
-		FileReader fileReader=new FileReader("f:/StudentResult.txt");
+		FileReader fileReader=new FileReader("StudentResult.txt");
 		BufferedReader bufferedReader=new BufferedReader(fileReader);
 		List<StudentResult> resultList=new ArrayList<StudentResult>();
 		boolean flag=false;
