@@ -2,6 +2,7 @@ package java9.mod.modapp1;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
 import static java9.mod.modapp1.TestUtils.*;
 public class ResultServiceTest {
 
@@ -12,5 +13,15 @@ public class ResultServiceTest {
 		String value=ResultService.gradeCalculation(studentResult);
 		yakshaAssert(currentTest(),(value.equals("V")?"true":"false"),businessTestFile);
 	}
+	@Test
+    public void testExceptionConditon() throws Exception{
+	 yakshaAssert(currentTest(),true,boundaryTestFile);
+      }
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	  yakshaAssert(currentTest(),true,exceptionTestFile);
+   }
+
 
 }
